@@ -1,0 +1,42 @@
+### Node Publish to Topic with Message
+
+POST https://localhost:44455/api/topic/pub 
+content-type: application/json
+X-SIGNATURE: 6212fd5ae90830db47dca1bc3d48e57c277e86f2c47c5bc7b27f5f21cb554a43
+X-TIMESTAMP: 1726846292080
+
+{
+    "topic": "azure-gcp-demo-topic",
+    "message": "{\"name\":\"test test\",\"email\":\"test.test@example.com\"}"
+}
+
+### Node Publish to Topic with mock Message
+
+POST https://localhost:44455/api/topic/pub 
+content-type: application/json
+X-SIGNATURE: 6212fd5ae90830db47dca1bc3d48e57c277e86f2c47c5bc7b27f5f21cb554a43
+X-TIMESTAMP: 1726846292080
+
+{
+    "topic": "azure-gcp-demo-topic"
+}
+
+### Node Pull Subscribe to Topic and save to Firestore
+
+POST https://localhost:44455/api//topic/sub/pull
+content-type: application/json
+X-SIGNATURE: 6212fd5ae90830db47dca1bc3d48e57c277e86f2c47c5bc7b27f5f21cb554a43
+X-TIMESTAMP: 1726846292080
+
+{
+    "subscription": "azure-gcp-demo-topic-sub",
+    "timeout": 10
+}
+
+### Azure Publish to Topic via SDK with mock Message
+
+GET  http://localhost:7071/api/PubTopicSdk
+
+### Azure Publish to Topic via API with mock Message
+
+GET  http://localhost:7071/api/PubTopicHmac

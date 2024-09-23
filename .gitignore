@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+*.nupkg
+
+# Typescript v1 declaration files
+typings
+
+# testing
+coverage
+*.dotCover
+
+# build
+build
+dist
+publish
+bin
+obj
+
+# misc
+.DS_Store
+.vscode
+.env
+.firebase
+.vs
+.hintrc
+*.jfm
+*.pfx
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+
+# configs
+firebase.config.json
+local.settings.json
+serviceAccountKey.json
